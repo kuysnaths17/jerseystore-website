@@ -1,6 +1,6 @@
 // import Image from "next/image";
-import Navigation from "@/components/navigation";
-import { NavProvider } from "@/app/navcontex";
+import Navigation from "./navigation";
+import { NavProvider } from "./navcontex";
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import aImage from '@/app/about-us-page.png'
+import aImage from './about-us-page.png'
 import { FaQuoteLeft } from 'react-icons/fa'
 
 function About() {

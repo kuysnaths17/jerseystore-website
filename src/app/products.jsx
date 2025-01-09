@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import axios from "axios";
 import Image from "next/image";
-import { NavContext } from "@/app/navcontex";
+import { NavContext } from "./navcontex";
 
 function Products() {
   const [jerseys, setJerseys] = useState([]);

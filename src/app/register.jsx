@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import Image from 'next/image'
 import axios from 'axios';
-import { NavContext } from '@/app/navcontex';
+import { NavContext } from './navcontex';
 
 function Register() {
   const {setActiveLink} = useContext(NavContext);

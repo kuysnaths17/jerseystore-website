@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useContext } from 'react'
 import axios from 'axios';
 import Image from 'next/image';
-import { NavContext } from '@/app/navcontex';
+import { NavContext } from './navcontex';
 import jslogo from '@/app/jslogo.png';
 function preview() {
     const { itemId } = useContext(NavContext);

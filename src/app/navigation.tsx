@@ -7,11 +7,11 @@ import { NavContext } from "@/app/navcontex";
 import jslogo from "@/app/jslogo.png";
 
 //pages
-import Homepage from "@/pages/homepage";
-import About from "@/pages/about";
-import Product from "@/pages/products";
-import Register from "@/pages/register";
-import Preview from "@/pages/preview";
+import Homepage from "./homepage";
+import About from "./about";
+import Product from "./products";
+import Register from "./register";
+import Preview from "./preview";
 
 function Navigation() {
   const { activeLink, setActiveLink, isNavOpen, setIsNavOpen } = useContext(NavContext);
