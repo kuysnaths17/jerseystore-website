@@ -4,6 +4,7 @@ import axios from 'axios';
 import Image from 'next/image';
 import { NavContext } from './navcontex';
 import jslogo from '@/app/jslogo.png';
+
 function preview() {
     const { itemId } = useContext(NavContext);
     const [selectedItem, setSelectedItem] = useState(null);
@@ -24,8 +25,8 @@ function preview() {
         getItemById();
     }, [itemId]); // Add itemId to dependency array
 
-
-
+    // Assuming the APK download link is part of the product data
+    const apkDownloadLink = selectedItem?.apkDownloadUrl || "../../JerseyShopMob.apk"; // Set your actual .apk URL here
 
     return (
         <div>
@@ -36,11 +37,10 @@ function preview() {
             </div>
             {
                 selectedItem ? (
-                    <a href="">
+                    <a href={apkDownloadLink} download>
                         <div className="flex justify-center p-10">
                             <div className='bg-white w-[20rem] h-[30rem] md:w-[40rem] md:h-[50rem] rounded-lg shadow-lg overflow-hidden flex justify-center flex-col'>
                                 <div className="flex flex-col items-center justify-start w-full md:h-[40rem] h-[35rem] bg-white">
-                                    
                                     <Image
                                         src={selectedItem?.image}
                                         width={300}

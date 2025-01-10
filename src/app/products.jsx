@@ -75,6 +75,9 @@ function Products() {
                   <p className=" text-lg sm:text-xl font-medium text-gray-700 mt-auto">
                     &#8369; {jersey.price}
                   </p>
+                  <p className=" text-lg sm:text-xl font-medium text-gray-700 mt-auto">
+                    {jersey.description}
+                  </p>
                 </div>
               </a>
             ))}
